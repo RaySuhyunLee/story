@@ -7,7 +7,7 @@
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "index.xml" | absURL }}">
 		<link rel="canonical" href="{{ .Permalink }}">
 		<!-- the Story logo is a square with rounded corners interlocked with a section symbol in Bodoni 72 Book font -->
-		<link rel="shortcut icon" type="image/png" href="{{ "apple-touch-icon-precomposed.png" | absURL }}">
+		<link rel="shortcut icon" type="image/png" href="{{ "favicon.ico" | absURL }}">
 		{{ with .Description }}<meta name="description" content="{{. | markdownify }}">{{ end }}
 		{{ with .Keywords }}<meta name="keywords" content="{{.}}">{{ end }}
 		{{ hugo.Generator }}
@@ -67,7 +67,7 @@
 
 				<nav class="hide-print sans-serif {{ cond $hdr "" "bg-black" }} border-box pa3 ph5-l">
 					<a href="{{ .Site.BaseURL }}" title="Home">
-						<img src="{{ "img/logo.jpg" | absURL }}" class="w2 h2 br-100" alt="{{ .Site.Title }}" />
+						<img src="{{ "img/logo.png" | absURL }}" class="w2 h2 br-10" alt="{{ .Site.Title }}" />
 					</a>
 					<div class="fr h2 pv2 tr">
 						{{- range .Site.Menus.main }}
